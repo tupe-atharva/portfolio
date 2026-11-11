@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  profile, about, education, skills, experience, projects, leadership, certifications,
+  profile, about, education, skills, experience, projects, leadership, certifications, achievements,
 } from './data.js'
 
 /* ---------- helpers ---------- */
@@ -344,6 +344,17 @@ function Leadership() {
               <p className="eyebrow small">{l.title}</p>
               <h3>{l.org}</h3>
               <p>{l.text}</p>
+            </article>
+          ))}
+        </div>
+        <h3 className="sub-title">Extracurricular achievements</h3>
+        <div className="lead-grid">
+          {achievements.map((a) => (
+            <article className="lead-card" key={a.org}>
+              <p className="eyebrow small">{a.title}</p>
+              <h3>{a.org}</h3>
+              <p>{a.text}</p>
+              {a.link && <p><a className="link" href={a.link.href} target="_blank" rel="noreferrer">{a.link.label}</a></p>}
             </article>
           ))}
         </div>
