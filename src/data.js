@@ -192,9 +192,9 @@ export const certifications = [
 
 export const achievements = [
   {
-    title: 'Winner',
+    title: 'Best Use of Vultr Track Award',
     org: 'UB Hacking 2026',
-    text: 'Won UB Hacking 2026, the University at Buffalo hackathon.',
+    text: 'Won the Best Use of Vultr track at UB Hacking 2026, an MLH-backed 24-hour hackathon, with BlinkTalk, a browser-based app that lets people who cannot speak communicate through eye movements and blinks, with replies spoken in their own cloned voice. Built the backend APIs and the speech-to-text and text-to-speech voice integration with custom patient voices using ElevenLabs, while the team hosted servers, CI/CD, and downtime fail-safes on Vultr cloud compute.',
     link: { label: 'View LinkedIn post', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7525649171228573696/' },
   },
 ]
